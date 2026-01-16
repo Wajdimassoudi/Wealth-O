@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { CheckCircle2 } from 'lucide-react';
 
@@ -30,10 +29,23 @@ const FakeNotifications: React.FC = () => {
     <div className={`fixed bottom-16 sm:bottom-20 md:bottom-24 right-4 md:right-6 z-[100] transition-all duration-700 transform ${active ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-12 opacity-0 scale-90 pointer-events-none'}`}>
       <div className="bg-slate-900/90 backdrop-blur-xl border border-emerald-500/30 p-3 md:p-4 rounded-xl md:rounded-2xl shadow-[0_0_30px_rgba(16,185,129,0.2)] flex items-center gap-3 md:gap-4 min-w-[200px] md:min-w-[280px] max-w-[260px] md:max-w-none">
         <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-emerald-500/20 flex items-center justify-center border border-emerald-500/40 shrink-0">
-          <CheckCircle2 size={16} md:size={20} className="text-emerald-400" />
+          <CheckCircle2 size={16} className="md:w-5 md:h-5 text-emerald-400" />
         </div>
         <div>
           <div className="text-[8px] md:text-[10px] font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2">
+            Withdrawal Success <span className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          </div>
+          <div className="text-xs md:text-sm font-bold text-white mt-0.5">
+            {data.name} <span className="text-emerald-400">${data.amount.toFixed(2)}</span>
+          </div>
+          <div className="text-[7px] md:text-[8px] font-bold text-slate-500 uppercase mt-0.5 tracking-tighter">Network: USDT TRC20</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FakeNotifications;
             Withdrawal Success <span className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
           </div>
           <div className="text-xs md:text-sm font-bold text-white mt-0.5">
