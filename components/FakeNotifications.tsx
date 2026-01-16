@@ -48,28 +48,3 @@ const FakeNotifications: React.FC = () => {
 };
 
 export default FakeNotifications;
-          </div>
-          <div className="text-xs md:text-sm font-bold text-white mt-0.5">
-            {data.name} <span className="text-emerald-400">${data.amount.toFixed(2)}</span>
-          </div>
-          <div className="text-[7px] md:text-[8px] font-bold text-slate-500 uppercase mt-0.5 tracking-tighter">Network: USDT TRC20</div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default FakeNotifications;
-            Withdrawal Success <span className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          </div>
-          <div className="text-xs md:text-sm font-bold text-white mt-0.5">
-            {data.name} <span className="text-emerald-400">${data.amount.toFixed(2)}</span>
-          </div>
-          <div className="text-[7px] md:text-[8px] font-bold text-slate-500 uppercase mt-0.5 tracking-tighter">Network: USDT TRC20</div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default FakeNotifications;
